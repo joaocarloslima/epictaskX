@@ -1,6 +1,7 @@
 package br.com.fiap.epictaskx.task;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
@@ -15,7 +16,7 @@ import java.util.UUID;
 public class Task {
 
     @Id
-    UUID id;
+    UUID id = UUID.randomUUID();
 
     @NotBlank
     String title;

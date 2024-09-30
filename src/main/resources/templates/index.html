@@ -13,12 +13,14 @@
 
     <h1 class="title">Tarefas Pendentes</h1>
 
-    <button class="button is-success mb-2">
+    <div class="notification is-success" th:if="${message}" th:text="${message}"></div>
+
+    <a href="/form" class="button is-success mb-2">
         <span class="icon is-small">
           <i class="fas fa-plus"></i>
         </span>
         <span>Nova Tarefa</span>
-    </button>
+    </a>
 
 
     <section class="grid is-col-min-10">
